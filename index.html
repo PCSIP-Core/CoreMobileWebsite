@@ -2,13 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1440">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Core Mobile AI — Clinical AI for hospital capacity</title>
 <link rel="icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="ds/colors_and_type.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<link rel="stylesheet" href="responsive.css">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -16,6 +17,7 @@
 <helmet>
   <link rel="stylesheet" href="ds/colors_and_type.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<link rel="stylesheet" href="responsive.css">
   <script src="ds/ds-bundle.js"></script>
   <style>
     body { margin: 0; background: #fff; font-family: 'Public Sans', system-ui, sans-serif; }
@@ -201,29 +203,29 @@
       </div>
 
       <!-- Where we work -->
-      <div style="background: var(--ink-50); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 64px;">
+      <div id="care-settings" style="background: var(--ink-50); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 64px;">
         <div style="display: grid; grid-template-columns: minmax(0, 560px) 1fr; gap: 72px; align-items: center;">
           <div>
             <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Where we work</div>
             <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 36px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 12px 0 0 0;">Built for the environments where minutes matter</h2>
             <div style="display: flex; flex-direction: column; margin-top: 28px;">
-              <a href="#1a" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
+              <a href="emergency-and-pre-hospital.html" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
                 <div><div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Emergency &amp; Pre-Hospital</div><div style="font-size: 19px; color: #000; margin-top: 4px;">Emergency department · Emergency transport</div></div>
                 <i class="fa-solid fa-arrow-right" style="color: var(--teal-500); font-size: 15px;"></i>
               </a>
-              <a href="#1a" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
+              <a href="surgical-and-perioperative.html" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
                 <div><div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Surgical &amp; Perioperative</div><div style="font-size: 19px; color: #000; margin-top: 4px;">Surgery · Anesthesia · Gastroenterology</div></div>
                 <i class="fa-solid fa-arrow-right" style="color: var(--teal-500); font-size: 15px;"></i>
               </a>
-              <a href="#1a" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
+              <a href="specialized-inpatient.html" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
                 <div><div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Specialized Inpatient</div><div style="font-size: 19px; color: #000; margin-top: 4px;">NICU · Radiology · Radiation oncology · Inpatient care</div></div>
                 <i class="fa-solid fa-arrow-right" style="color: var(--teal-500); font-size: 15px;"></i>
               </a>
-              <a href="#1a" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
+              <a href="behavioral-health.html" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
                 <div><div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Behavioral &amp; Mental Health</div><div style="font-size: 19px; color: #000; margin-top: 4px;">Behavioral health · CARE Act · Crisis coordination</div></div>
                 <i class="fa-solid fa-arrow-right" style="color: var(--teal-500); font-size: 15px;"></i>
               </a>
-              <a href="#1a" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
+              <a href="community-care.html" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border-strong); color: inherit;" style-hover="color: var(--teal-700);">
                 <div><div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Community Care Next Gen</div><div style="font-size: 19px; color: #000; margin-top: 4px;">Post-acute care · Referrals · Community providers</div></div>
                 <i class="fa-solid fa-arrow-right" style="color: var(--teal-500); font-size: 15px;"></i>
               </a>
@@ -369,5 +371,6 @@ class Component extends DCLogic {
   }
 }
 </script>
+<script src="responsive.js"></script>
 </body>
 </html>
