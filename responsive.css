@@ -23,6 +23,17 @@
   /* no horizontal overflow: rows wrap, children may shrink */
   [style*="display: flex"]:not([style*="flex-direction: column"]) { flex-wrap: wrap !important; }
   [style*="display: flex"] > *, [style*="display: grid"] > * { min-width: 0 !important; }
+  /* list rows with a trailing arrow: keep the arrow on the row, vertically centred */
+  a[style*="justify-content: space-between"] {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+  }
+  a[style*="justify-content: space-between"] > div { flex: 1 1 auto !important; }
+  a[style*="justify-content: space-between"] > i {
+    flex: 0 0 auto !important;
+    margin-left: 14px !important;
+    align-self: center !important;
+  }
   [style*="white-space: nowrap"] { white-space: normal !important; }
   /* vertical hairline dividers between inline groups */
   [style*="width: 1px"][style*="height: 28px"] { display: none !important; }
@@ -86,6 +97,13 @@
 
   /* decorative concentric rings */
   [style*="position: absolute"][style*="border-radius: 50%"][style*="border: 1.5px"] { display: none !important; }
+
+  /* any fixed-height stage that holds a device shot */
+  [style*="position: relative"][style*="height: 560px"],
+  [style*="position: relative"][style*="height: 520px"],
+  [style*="position: relative"][style*="height: 480px"] { height: auto !important; overflow: visible !important; }
+  img[style*="height: 340px"],
+  img[style*="height: 300px"] { height: auto !important; width: auto !important; max-width: 100% !important; }
 
   /* media */
   img { max-width: 100% !important; }
