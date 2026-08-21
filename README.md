@@ -4,7 +4,7 @@ Static site. Deploy with GitHub Pages: Settings > Pages > Deploy from a branch >
 
 - `index.html` is the homepage.
 - `support.js`, `assets/`, and `_ds/` are required - do not delete.
-- `.nojekyll` must stay; without it GitHub Pages ignores the `_ds` folder.
+- `.nojekyll` is a hidden file (Cmd+Shift+. in Finder to see it). Upload it too.
 
 ## Custom domain
 

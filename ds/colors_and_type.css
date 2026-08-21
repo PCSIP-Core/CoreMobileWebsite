@@ -1,0 +1,153 @@
+/* ============================================================================
+   CORE MOBILE — Colors & Type Foundations
+   Source of truth: CMI Brand Guidelines VS_01.00 + "Core Mobile Color Palette 2025.pdf"
+   Brand hero color: Eastern Blue (teal) #008895
+   Load this file first; everything else references these custom properties.
+   ============================================================================ */
+
+/* ---- Webfonts (nearest Google Fonts matches — see README "Typography") ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ======================================================================
+     1. BRAND PALETTE  (verbatim from the 2025 palette PDF)
+     ====================================================================== */
+
+  /* -- Primary palette (5) — for brand identity assets -- */
+  --quartz:        #CDDBF2;   /* pale lavender-blue */
+  --sky-blue:      #76C0EF;   /* light blue        */
+  --khaki:         #F2DB94;   /* soft yellow       */
+  --tacao:         #F7BA7E;   /* warm peach        */
+  --eastern-blue:  #008895;   /* TEAL — brand hero */
+
+  /* -- Secondary palette (10) — accents only, never on primary identity -- */
+  --blush:         #B74B59;   /* dusty rose-red    */
+  --sweet-pink:    #EB9485;   /* salmon            */
+  --pot-pourri:    #EFDACE;   /* warm cream        */
+  --chantilly:     #E5B0CB;   /* soft pink         */
+  --grey-chateau:  #9A9FA5;   /* cool grey         */
+  --tory-blue:     #3A5B92;   /* deep blue         */
+  --charlotte:     #93D1E2;   /* pale cyan         */
+  --puerto-rico:   #47AD9E;   /* teal-green        */
+  --jordy-blue:    #858FEA;   /* periwinkle        */
+  --big-stone:     #333A45;   /* dark slate ink    */
+
+  /* ======================================================================
+     2. PRIMARY TEAL SCALE  (built around Eastern Blue #008895)
+     Use --teal-500 as the canonical brand teal.
+     ====================================================================== */
+  --teal-50:  #E6F4F5;
+  --teal-100: #C3E5E8;
+  --teal-200: #8FCED4;
+  --teal-300: #54B3BC;
+  --teal-400: #1F98A3;
+  --teal-500: #008895;   /* Eastern Blue — brand hero */
+  --teal-600: #007A86;
+  --teal-700: #00626C;
+  --teal-800: #064B53;
+  --teal-900: #0A3A41;
+
+  /* Logo gradient (CORE → MOBILE sweep) */
+  --grad-brand: linear-gradient(100deg, #007E8C 0%, #2BA39C 55%, #3AAE9F 100%); /* @kind color */
+  --grad-brand-soft: linear-gradient(135deg, var(--teal-500) 0%, var(--puerto-rico) 100%);
+
+  /* ======================================================================
+     3. NEUTRALS / INK  (slate family anchored on Big Stone)
+     ====================================================================== */
+  --ink-900: #1C2128;   /* darkest text on light */
+  --ink-800: #333A45;   /* Big Stone — primary heading ink */
+  --ink-700: #454D5A;
+  --ink-600: #5C6573;
+  --ink-500: #767F8C;   /* near Grey Chateau */
+  --ink-400: #9A9FA5;   /* Grey Chateau — muted text/icons */
+  --ink-300: #C2C7CD;
+  --ink-200: #DEE1E5;   /* borders */
+  --ink-150: #E8EAED;
+  --ink-100: #F1F3F5;   /* subtle fills */
+  --ink-50:  #F7F9FA;   /* app canvas */
+  --white:   #FFFFFF;
+
+  /* ======================================================================
+     4. SEMANTIC TOKENS
+     ====================================================================== */
+  /* Surfaces */
+  --bg-canvas:    var(--ink-50);
+  --bg-surface:   var(--white);
+  --bg-subtle:    var(--ink-100);
+  --bg-inverse:   var(--big-stone);
+
+  /* Text */
+  --fg-1: var(--ink-800);   /* primary text / headings */
+  --fg-2: var(--ink-600);   /* secondary text */
+  --fg-3: var(--ink-400);   /* tertiary / captions */
+  --fg-on-brand: #FFFFFF;
+  --fg-link: var(--teal-600);
+
+  /* Brand actions */
+  --brand:        var(--teal-500);
+  --brand-hover:  var(--teal-600);
+  --brand-press:  var(--teal-700);
+  --brand-tint:   var(--teal-50);
+  --accent:       var(--puerto-rico);
+
+  /* Borders & lines */
+  --border:       var(--ink-200);
+  --border-strong:var(--ink-300);
+  --ring:         rgba(0,136,149,0.32);  /* focus ring (teal) */
+
+  /* Status — clinical states */
+  --success:      #2E9E7B;   --success-bg: #E4F4EE;   --success-fg: #1C6B53;
+  --info:         var(--tory-blue);  --info-bg: #E8EDF6;  --info-fg: #2A4470;
+  --warning:      #E08A3C;   --warning-bg: #FCF0DF;   --warning-fg: #8A5113;
+  --critical:     var(--blush);  --critical-bg: #F7E6E8;  --critical-fg: #8A2F3B;
+  --vitals:       var(--puerto-rico);   /* live/monitoring accent */
+
+  /* ======================================================================
+     5. RADII / ELEVATION / SPACING
+     ====================================================================== */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(28,33,40,0.06);
+  --shadow-sm: 0 1px 3px rgba(28,33,40,0.08), 0 1px 2px rgba(28,33,40,0.04);
+  --shadow-md: 0 4px 12px rgba(28,33,40,0.08), 0 2px 4px rgba(28,33,40,0.04);
+  --shadow-lg: 0 12px 28px rgba(28,33,40,0.12), 0 4px 8px rgba(28,33,40,0.05);
+  --shadow-brand: 0 8px 22px rgba(0,136,149,0.26);
+
+  /* 4px base spacing scale */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px; --sp-8: 32px; --sp-10: 40px; --sp-12: 48px;
+
+  /* ======================================================================
+     6. TYPOGRAPHY
+     ====================================================================== */
+  --font-display: 'Poppins', system-ui, sans-serif;   /* brand & headings (logo match) */
+  --font-sans:    'Public Sans', system-ui, sans-serif;/* UI & body */
+  --font-mono:    'IBM Plex Mono', ui-monospace, monospace; /* data, IDs, vitals */
+
+  --fs-display: 44px;  --lh-display: 1.08 /* @kind other */;  --ls-display: -0.02em;
+  --fs-h1: 32px;       --lh-h1: 1.15 /* @kind other */;       --ls-h1: -0.015em;
+  --fs-h2: 24px;       --lh-h2: 1.2 /* @kind other */;        --ls-h2: -0.01em;
+  --fs-h3: 19px;       --lh-h3: 1.3 /* @kind other */;        --ls-h3: -0.005em;
+  --fs-body: 15px;     --lh-body: 1.55 /* @kind other */;
+  --fs-sm: 13px;       --lh-sm: 1.45 /* @kind other */;
+  --fs-xs: 11px;       --lh-xs: 1.4 /* @kind other */;
+  --fs-label: 12px;    --ls-label: 0.06em;  /* uppercase eyebrows */
+}
+
+/* ============================================================================
+   SEMANTIC TYPE CLASSES (optional helpers)
+   ============================================================================ */
+.cm-display { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-display); line-height: var(--lh-display); letter-spacing: var(--ls-display); color: var(--fg-1); }
+.cm-h1 { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-h1); line-height: var(--lh-h1); letter-spacing: var(--ls-h1); color: var(--fg-1); }
+.cm-h2 { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h2); line-height: var(--lh-h2); letter-spacing: var(--ls-h2); color: var(--fg-1); }
+.cm-h3 { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h3); line-height: var(--lh-h3); letter-spacing: var(--ls-h3); color: var(--fg-1); }
+.cm-body { font-family: var(--font-sans); font-weight: 400; font-size: var(--fs-body); line-height: var(--lh-body); color: var(--fg-1); }
+.cm-sm { font-family: var(--font-sans); font-weight: 400; font-size: var(--fs-sm); line-height: var(--lh-sm); color: var(--fg-2); }
+.cm-caption { font-family: var(--font-sans); font-weight: 400; font-size: var(--fs-xs); line-height: var(--lh-xs); color: var(--fg-3); }
+.cm-eyebrow { font-family: var(--font-sans); font-weight: 700; font-size: var(--fs-label); letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--brand); }
+.cm-mono { font-family: var(--font-mono); font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: 0; }
