@@ -20,6 +20,15 @@
     gap: 20px !important;
   }
 
+  /* no horizontal overflow: rows wrap, children may shrink */
+  [style*="display: flex"]:not([style*="flex-direction: column"]) { flex-wrap: wrap !important; }
+  [style*="display: flex"] > *, [style*="display: grid"] > * { min-width: 0 !important; }
+  [style*="white-space: nowrap"] { white-space: normal !important; }
+  /* vertical hairline dividers between inline groups */
+  [style*="width: 1px"][style*="height: 28px"] { display: none !important; }
+  /* long text should break rather than push the page wide */
+  h1, h2, h3, p, div, span, a { overflow-wrap: break-word !important; }
+
   /* horizontal gutters */
   [style*="padding: 88px 64px"],
   [style*="padding: 84px 64px"],
@@ -58,7 +67,9 @@
     padding-bottom: 14px !important;
   }
   .cm-nav-item { padding: 4px 0 !important; }
+  .cm-nav-item > a { white-space: nowrap !important; }
   .cm-dropdown { display: none !important; }
+  img[style*="height: 34px"] { height: 26px !important; }
 
   /* floating hero stat cards become normal blocks */
   [style*="backdrop-filter"] {
