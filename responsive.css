@@ -105,7 +105,10 @@
     display: block !important;
   }
   [style*="position: relative"][style*="height: 620px"],
-  [style*="position: relative"][style*="height: 430px"] { height: auto !important; }
+  [style*="position: relative"][style*="height: 430px"] { height: auto !important; overflow: visible !important; }
+  /* fixed-height / clipped wrappers must not crop art once it is in the flow */
+  [style*="overflow: hidden"]:not([style*="aspect-ratio"]):not([style*="border-radius: 50%"]) { overflow: visible !important; }
+  img:not([style*="inset: 0"]) { max-height: none !important; object-fit: contain !important; }
   [style*="transform: scale("] { transform: none !important; }
   [style*="overflow: hidden"][style*="height: 150px"] { height: auto !important; }
 
