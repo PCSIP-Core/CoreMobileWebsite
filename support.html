@@ -135,7 +135,7 @@
             </label>
             <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px;">
               <button type="submit" style="font-family: 'Public Sans', system-ui, sans-serif; display: inline-flex; align-items: center; gap: 10px; background: var(--brand); color: #fff; font-size: 19px; font-weight: 600; padding: 15px 30px; border: 0; border-radius: var(--r-md); box-shadow: var(--shadow-brand); cursor: pointer;"><i class="fa-solid fa-paper-plane" style="font-size: 15px;"></i>Send message</button>
-              <span style="font-size: 19px; color: #000;">Opens in your email app, addressed to support@coremobile.ai</span>
+              <span id="sf-status" style="font-size: 19px; color: #000;"></span>
             </div>
           </form>
 
@@ -194,9 +194,36 @@ document.addEventListener('submit', function(e){
   if (!f) return;
   e.preventDefault();
   var g = function(id){ var el = document.getElementById(id); return el ? el.value.trim() : ''; };
-  var subject = 'Support request: ' + g('sf-topic');
-  var lines = ['Name: ' + g('sf-name'), 'Organization: ' + g('sf-org'), 'Email: ' + g('sf-email'), 'Phone: ' + g('sf-phone'), 'Topic: ' + g('sf-topic'), '', g('sf-message')];
-  window.location.href = 'mailto:support@coremobile.ai?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+  var status = document.getElementById('sf-status');
+  var btn = f.querySelector('button[type="submit"]');
+  if (status) { status.style.color = '#000'; status.textContent = 'Sending…'; }
+  if (btn) { btn.disabled = true; btn.style.opacity = '0.6'; }
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      access_key: '7a3d36c3-e1de-4462-a4cd-301a66a189af',
+      subject: 'Support request: ' + g('sf-topic'),
+      from_name: g('sf-name') || 'Website support form',
+      name: g('sf-name'),
+      organization: g('sf-org'),
+      email: g('sf-email'),
+      phone: g('sf-phone'),
+      topic: g('sf-topic'),
+      message: g('sf-message')
+    })
+  }).then(function(r){ return r.json(); }).then(function(d){
+    if (d.success) {
+      f.reset();
+      if (status) { status.style.color = '#007A86'; status.textContent = 'Thanks — your message has been sent. We will be in touch.'; }
+    } else {
+      if (status) { status.style.color = '#B74B59'; status.textContent = 'Something went wrong. Please email support@coremobile.ai directly.'; }
+    }
+  }).catch(function(){
+    if (status) { status.style.color = '#B74B59'; status.textContent = 'Something went wrong. Please email support@coremobile.ai directly.'; }
+  }).then(function(){
+    if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
+  });
 }, true);
 </script>
 </body>
