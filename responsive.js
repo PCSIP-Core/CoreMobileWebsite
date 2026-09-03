@@ -29,17 +29,60 @@
     }
   }
 
+  function header() {
+    return document.querySelector('[style*="height: 76px"]');
+  }
+
+  /* Under MIN_REFLOW the nav list collapses behind a hamburger; the CSS turns
+     each hover menu into an accordion once the list is open. */
+  function addBurger() {
+    var bar = header();
+    if (!bar || bar.querySelector('.cm-burger')) return;
+    var list = bar.querySelector('div[style*="gap: 36px"]');
+    if (!list) return;
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'cm-burger';
+    b.setAttribute('aria-label', 'Menu');
+    b.setAttribute('aria-expanded', 'false');
+    b.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    b.addEventListener('click', function () {
+      var open = bar.classList.toggle('cm-menu-open');
+      b.setAttribute('aria-expanded', open ? 'true' : 'false');
+      b.innerHTML = '<i class="fa-solid fa-' + (open ? 'xmark' : 'bars') + '"></i>';
+      if (!open) {
+        var all = bar.querySelectorAll('.cm-nav-item.cm-open');
+        for (var i = 0; i < all.length; i++) all[i].classList.remove('cm-open');
+      }
+    });
+    list.parentNode.insertBefore(b, list);
+  }
+
+  document.addEventListener('click', function (e) {
+    if (document.documentElement.clientWidth >= MIN_REFLOW) return;
+    var link = e.target.closest && e.target.closest('.cm-nav-item > a');
+    if (!link) return;
+    var item = link.parentNode;
+    if (!item.querySelector('.cm-dropdown')) return;
+    e.preventDefault();
+    var open = item.classList.contains('cm-open');
+    var all = document.querySelectorAll('.cm-nav-item.cm-open');
+    for (var i = 0; i < all.length; i++) all[i].classList.remove('cm-open');
+    if (!open) item.classList.add('cm-open');
+  }, true);
+
   var t;
   function onResize() { clearTimeout(t); t = setTimeout(fit, 60); }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fit);
+    document.addEventListener('DOMContentLoaded', function () { fit(); addBurger(); });
   } else {
     fit();
+    addBurger();
   }
   // the page paints from a streaming runtime, so re-fit once it settles
-  setTimeout(fit, 300);
-  setTimeout(fit, 1200);
+  setTimeout(function () { fit(); addBurger(); }, 300);
+  setTimeout(function () { fit(); addBurger(); }, 1200);
   window.addEventListener('resize', onResize);
   window.addEventListener('orientationchange', onResize);
 })();
