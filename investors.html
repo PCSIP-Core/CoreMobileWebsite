@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investors | Core Mobile AI</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="ds/colors_and_type.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<link rel="stylesheet" href="responsive.css">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="ds/colors_and_type.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<link rel="stylesheet" href="responsive.css">
+  <script src="ds/ds-bundle.js"></script>
+  <style>
+    body { margin: 0; background: #fff; font-family: 'Public Sans', system-ui, sans-serif; }
+    a { color: var(--teal-600); text-decoration: none; }
+    a:hover { color: var(--teal-700); }
+    .cm-nav-item .cm-dropdown { opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity 0.18s ease-out, transform 0.18s ease-out, visibility 0.18s; }
+    .cm-nav-item:hover .cm-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .cm-dropdown a:hover { background: var(--brand-tint); color: var(--teal-700); }
+  </style>
+</helmet>
+
+<section>
+
+  <div id="1a" data-screen-label="Investors page — Desktop" style="width: 100%;">
+    <div style="width: 1440px; min-width: 1440px; margin: 0 auto; background: #fff;">
+
+      <!-- Nav -->
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 64px; height: 76px; border-bottom: 1px solid var(--border); background: #fff;">
+        <a href="index.html"><img src="assets/logo-long-teal.png" alt="Core Mobile AI" style="height: 34px; display: block;"></a>
+        <div style="display: flex; align-items: center; gap: 36px;">
+          <div class="cm-nav-item" style="position: relative; padding: 26px 0;">
+            <a href="platform.html" style="font-size: 19px; font-weight: 600; color: #000; display: inline-flex; align-items: center; gap: 7px;">Platform <i class="fa-solid fa-chevron-down" style="font-size: 10px; color: var(--ink-400);"></i></a>
+            <div class="cm-dropdown" style="position: absolute; top: 100%; left: 50%; margin-left: -130px; width: 260px; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-md); padding: 8px; z-index: 50; display: flex; flex-direction: column;">
+              <a href="clinical-ai.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Clinical AI &amp; Automation</a>
+              <a href="coordination-and-flow.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Coordination &amp; Flow</a>
+              <a href="patient-engagement.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Patient Engagement</a>
+              <a href="iot-and-facility-safety.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">IoT &amp; Facility Safety</a>
+            </div>
+          </div>
+          <div class="cm-nav-item" style="position: relative; padding: 26px 0;">
+            <a href="#1a" style="font-size: 19px; font-weight: 600; color: #000; display: inline-flex; align-items: center; gap: 7px;">Use Cases <i class="fa-solid fa-chevron-down" style="font-size: 10px; color: var(--ink-400);"></i></a>
+            <div class="cm-dropdown" style="position: absolute; top: 100%; left: 50%; margin-left: -130px; width: 260px; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-md); padding: 8px; z-index: 50; display: flex; flex-direction: column;">
+              <a href="emergency-and-pre-hospital.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Emergency &amp; Pre-Hospital</a>
+              <a href="surgical-and-perioperative.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Surgical &amp; Perioperative</a>
+              <a href="specialized-inpatient.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Specialized Inpatient</a>
+              <a href="behavioral-health.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Behavioral &amp; Mental Health</a>
+              <a href="community-care.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Community Care Next Gen</a>
+            </div>
+          </div>
+          <div class="cm-nav-item" style="position: relative; padding: 26px 0;">
+            <a href="#1a" style="font-size: 19px; font-weight: 600; color: #000; display: inline-flex; align-items: center; gap: 7px;">Markets <i class="fa-solid fa-chevron-down" style="font-size: 10px; color: var(--ink-400);"></i></a>
+            <div class="cm-dropdown" style="position: absolute; top: 100%; left: 50%; margin-left: -160px; width: 320px; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-md); padding: 8px; z-index: 50; display: flex; flex-direction: column;">
+              <a href="federal-and-government-hospitals.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Federal &amp; Government Hospitals</a>
+              <a href="health-systems-and-educational-networks.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Health Systems &amp; Educational Networks</a>
+              <a href="county-and-rural-hospitals.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">County &amp; Rural Hospitals</a>
+            </div>
+          </div>
+          <div class="cm-nav-item" style="position: relative; padding: 26px 0;">
+            <a href="#1a" style="font-size: 19px; font-weight: 600; color: #000; display: inline-flex; align-items: center; gap: 7px;">Trust <i class="fa-solid fa-chevron-down" style="font-size: 10px; color: var(--ink-400);"></i></a>
+            <div class="cm-dropdown" style="position: absolute; top: 100%; left: 50%; margin-left: -120px; width: 240px; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-md); padding: 8px; z-index: 50; display: flex; flex-direction: column;">
+              <a href="security-and-compliance.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Security &amp; Compliance</a>
+            </div>
+          </div>
+          <div class="cm-nav-item" style="position: relative; padding: 26px 0;">
+            <a href="#1a" style="font-size: 19px; font-weight: 600; color: #000; display: inline-flex; align-items: center; gap: 7px;">About <i class="fa-solid fa-chevron-down" style="font-size: 10px; color: var(--ink-400);"></i></a>
+            <div class="cm-dropdown" style="position: absolute; top: 100%; left: 50%; margin-left: -110px; width: 220px; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-md); padding: 8px; z-index: 50; display: flex; flex-direction: column;">
+              <a href="our-story.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Our Story</a>
+              <a href="customer-use-cases.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Success Stories</a>
+              <a href="partners.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Partners</a>
+              <a href="support.html" style="display: block; font-size: 19px; font-weight: 500; color: #000; padding: 10px 14px; border-radius: var(--r-md);">Support</a>
+            </div>
+          </div>
+        </div>
+        <a href="https://outlook.office.com/book/CoreMobileAIDiscoveryCall@coremobileinc.com/?ismsaljsauthenabled" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; background: var(--brand); color: #fff; font-size: 19px; font-weight: 600; padding: 11px 22px; border-radius: var(--r-md);" style-hover="background: var(--brand-hover); color: #fff;">Schedule a Demo</a>
+      </div>
+
+      <!-- Hero -->
+      <div style="position: relative; overflow: hidden; background: var(--grad-brand);">
+        <div style="position: absolute; top: -160px; right: -180px; width: 700px; height: 700px; border: 1.5px solid rgba(255,255,255,0.14); border-radius: 50%;"></div>
+        <div style="position: absolute; top: -30px; right: -60px; width: 460px; height: 460px; border: 1.5px solid rgba(255,255,255,0.14); border-radius: 50%;"></div>
+        <div style="position: relative; padding: 84px 64px 76px 64px; display: grid; grid-template-columns: minmax(0, 1fr) 440px; gap: 56px; align-items: center;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.35); border-radius: var(--r-pill); padding: 8px 18px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: #fff;"></span>
+              <span style="font-size: 19px; font-weight: 600; color: #fff;">Series A · $5M Raise · $2.1M Received</span>
+            </div>
+            <h1 style="font-family: var(--font-display); font-weight: 700; font-size: 52px; line-height: 1.1; letter-spacing: -0.02em; color: #fff; margin: 24px 0 0 0; text-wrap: pretty;">Transforming<br><span style="color: rgba(255,255,255,0.75);">Healthcare Economics.</span></h1>
+            <p style="font-size: 21px; line-height: 1.65; color: rgba(255,255,255,0.95); margin: 22px 0 0 0; max-width: 620px; text-wrap: pretty;">Core Mobile is actively deployed inside VA and other healthcare facilities. We have a high performing, currently-deployed product, not just a vision. Our patented Clinical AI platform has a national Authority to Operate (ATO), turning disconnected hospital data into real-time action.</p>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin: 34px 0 0 0;">
+              <a href="mailto:chandra@coremobileinc.com" style="display: inline-flex; align-items: center; gap: 10px; background: #fff; color: var(--teal-700); font-size: 19px; font-weight: 700; padding: 15px 30px; border-radius: var(--r-md); box-shadow: var(--shadow-md);" style-hover="background: var(--teal-50); color: var(--teal-800);">Request a meeting</a>
+              <a href="index.html" style="display: inline-flex; align-items: center; gap: 10px; border: 1.5px solid rgba(255,255,255,0.7); color: #fff; font-size: 19px; font-weight: 600; padding: 14px 28px; border-radius: var(--r-md);" style-hover="background: rgba(255,255,255,0.12); color: #fff;">Visit the platform</a>
+            </div>
+          </div>
+          <div style="background: #fff; border-radius: var(--r-xl); overflow: hidden; box-shadow: 0 18px 50px rgba(0,0,0,0.22);">
+            <div style="background: var(--teal-50); border-bottom: 1px solid var(--teal-200); padding: 18px 24px; font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-700);">Series A Snapshot · Confidential</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+            <div style="padding: 24px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 32px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; color: var(--teal-700);">$2.1M</div>
+              <div style="font-size: 19px; line-height: 1.45; color: #000; margin-top: 8px;">Revenue today,<br>at break-even</div>
+            </div>
+            <div style="padding: 24px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 32px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; color: var(--teal-700);">$8–10M</div>
+              <div style="font-size: 19px; line-height: 1.45; color: #000; margin-top: 8px;">Target revenue,<br>12–18 months</div>
+            </div>
+            <div style="padding: 24px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 32px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; color: var(--teal-700);">20%+</div>
+              <div style="font-size: 19px; line-height: 1.45; color: #000; margin-top: 8px;">Efficiency gains,<br>demonstrated</div>
+            </div>
+            <div style="padding: 24px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 32px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; color: var(--teal-700);">&lt;90d</div>
+              <div style="font-size: 19px; line-height: 1.45; color: #000; margin-top: 8px;">Contract to ROI</div>
+            </div>
+            </div>
+            <div style="background: var(--ink-50); padding: 24px; text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 28px; font-weight: 800; letter-spacing: -0.02em; color: var(--teal-700); line-height: 1;">$5M Series A</div>
+              <div style="font-size: 19px; color: #000; margin-top: 8px;">$20M pre · $25M post · $2.1M received</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Opportunity -->
+      <div style="padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Market Opportunity</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">Healthcare AI is moving fast. Core Mobile is already there.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0; max-width: 900px; text-wrap: pretty;">Healthcare is now the fastest-moving sector in enterprise AI, and nearly all capital flows to startups, not the legacy EHR incumbents.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 36px;">
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 30px;">
+            <div style="font-family: var(--font-display); font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: var(--teal-700);">2.2×</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 14px;">Faster than the broader economy</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 8px 0 0 0;">Healthcare is adopting AI at more than double the rate of the overall economy, driven by urgent pressure to expand capacity without adding beds or headcount.<span style="display: block; margin-top: 10px; color: var(--ink-500);">Source: Menlo Ventures, 2025</span></p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 30px;">
+            <div style="font-family: var(--font-display); font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: var(--teal-700);">$1.4B</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 14px;">Spent on healthcare AI last year</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 8px 0 0 0;">That figure nearly tripled year over year. The spending cycle is early and accelerating; hospitals are actively buying, not just evaluating.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 30px;">
+            <div style="font-family: var(--font-display); font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: var(--teal-700);">85%</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 14px;">Flows to startups, not incumbents</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 8px 0 0 0;">Epic and Cerner can’t move fast enough. Hospitals are turning to best-of-breed integration layers, which is exactly the gap Core Mobile fills.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 30px;">
+            <div style="font-family: var(--font-display); font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: var(--teal-700);">$700B</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 14px;">Federal IDIQ vehicle</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 8px 0 0 0;">Core Mobile is positioned as a prime on a federal multiple-award vehicle with IBM, Philips, and MCG, a contracting channel most competitors can’t access.</p>
+          </div>
+        </div>
+        <div style="background: var(--teal-50); border: 1px solid var(--teal-200); border-radius: var(--r-lg); padding: 32px; margin-top: 20px;">
+          <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1);">The problem hospitals can’t solve with more CapEx</div>
+          <p style="font-size: 19px; line-height: 1.7; color: #000; margin: 12px 0 0 0;">Capacity limits aren’t a money problem; they’re a coordination and data problem. Hospitals have dozens of disconnected systems that were never built to talk to each other. The intelligence to fix throughput is trapped inside those systems. Core Mobile is the missing integration, inference, and workflow layer that connects all of it in real time, deployed on top of what hospitals already run, with no rip-and-replace.</p>
+        </div>
+      </div>
+
+      <!-- Outcomes -->
+      <div style="background: var(--ink-50); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Demonstrated Outcomes</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">Every metric ties directly to hospital economics.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">Not workflow checkboxes. Improvements with a direct line to bed turnover, OR revenue, schedule utilization, and clinician retention.</p>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 34px; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden;">
+          <thead>
+            <tr style="background: var(--brand);">
+              <th style="padding: 16px 24px; text-align: left; font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: #fff;">Metric</th>
+              <th style="padding: 16px 24px; text-align: left; font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: #fff;">Improvement</th>
+              <th style="padding: 16px 24px; text-align: left; font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: #fff;">Economic Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 16px 24px; font-size: 19px; font-weight: 500; color: #000; border-bottom: 1px solid var(--border);">ED door-to-doc time</td>
+              <td style="padding: 16px 24px; border-bottom: 1px solid var(--border);"><span style="display: inline-block; background: var(--teal-50); color: var(--teal-700); border: 1px solid var(--teal-200); border-radius: var(--r-pill); padding: 4px 14px; font-size: 19px; font-weight: 600; white-space: nowrap;">5–20% reduction</span></td>
+              <td style="padding: 16px 24px; font-size: 19px; color: #000; border-bottom: 1px solid var(--border);">Capacity &amp; throughput</td>
+            </tr>
+            <tr>
+              <td style="padding: 16px 24px; font-size: 19px; font-weight: 500; color: #000; border-bottom: 1px solid var(--border);">Admit length of stay</td>
+              <td style="padding: 16px 24px; border-bottom: 1px solid var(--border);"><span style="display: inline-block; background: var(--teal-50); color: var(--teal-700); border: 1px solid var(--teal-200); border-radius: var(--r-pill); padding: 4px 14px; font-size: 19px; font-weight: 600; white-space: nowrap;">5–20% reduction</span></td>
+              <td style="padding: 16px 24px; font-size: 19px; color: #000; border-bottom: 1px solid var(--border);">Capacity &amp; throughput</td>
+            </tr>
+            <tr>
+              <td style="padding: 16px 24px; font-size: 19px; font-weight: 500; color: #000; border-bottom: 1px solid var(--border);">Surgical throughput</td>
+              <td style="padding: 16px 24px; border-bottom: 1px solid var(--border);"><span style="display: inline-block; background: var(--teal-50); color: var(--teal-700); border: 1px solid var(--teal-200); border-radius: var(--r-pill); padding: 4px 14px; font-size: 19px; font-weight: 600; white-space: nowrap;">5–20% increase</span></td>
+              <td style="padding: 16px 24px; font-size: 19px; color: #000; border-bottom: 1px solid var(--border);">OR revenue per hour</td>
+            </tr>
+            <tr>
+              <td style="padding: 16px 24px; font-size: 19px; font-weight: 500; color: #000; border-bottom: 1px solid var(--border);">Documentation burden</td>
+              <td style="padding: 16px 24px; border-bottom: 1px solid var(--border);"><span style="display: inline-block; background: var(--teal-50); color: var(--teal-700); border: 1px solid var(--teal-200); border-radius: var(--r-pill); padding: 4px 14px; font-size: 19px; font-weight: 600; white-space: nowrap;">20–50% reduction</span></td>
+              <td style="padding: 16px 24px; font-size: 19px; color: #000; border-bottom: 1px solid var(--border);">Clinician retention</td>
+            </tr>
+            <tr>
+              <td style="padding: 16px 24px; font-size: 19px; font-weight: 500; color: #000; border-bottom: 1px solid var(--border);">No-shows / cancellations</td>
+              <td style="padding: 16px 24px; border-bottom: 1px solid var(--border);"><span style="display: inline-block; background: var(--teal-50); color: var(--teal-700); border: 1px solid var(--teal-200); border-radius: var(--r-pill); padding: 4px 14px; font-size: 19px; font-weight: 600; white-space: nowrap;">5–40% reduction</span></td>
+              <td style="padding: 16px 24px; font-size: 19px; color: #000; border-bottom: 1px solid var(--border);">Schedule utilization</td>
+            </tr>
+            <tr>
+              <td style="padding: 16px 24px; font-size: 19px; font-weight: 500; color: #000; ">Overall hospital capacity</td>
+              <td style="padding: 16px 24px; "><span style="display: inline-block; background: var(--teal-50); color: var(--teal-700); border: 1px solid var(--teal-200); border-radius: var(--r-pill); padding: 4px 14px; font-size: 19px; font-weight: 600; white-space: nowrap;">5–20% increase</span></td>
+              <td style="padding: 16px 24px; font-size: 19px; color: #000; ">Revenue without new beds</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="display: flex; gap: 14px; align-items: flex-start; background: var(--teal-50); border: 1px solid var(--teal-200); border-radius: var(--r-lg); padding: 20px 24px; margin-top: 22px;">
+          <i class="fa-solid fa-circle-check" style="flex: 0 0 auto; color: var(--teal-600); font-size: 16px; margin-top: 5px;"></i>
+          <p style="font-size: 19px; line-height: 1.65; color: #000; margin: 0;">Validated by an <a href="assets/va-sipp-findings-report-2023-12-19.pdf" target="_blank" rel="noopener" style="color: var(--teal-700); font-weight: 600;">independent third-party pilot report at Albany VA</a> and listed on the <a href="https://marketplace.va.gov/innovations/patient-care-systems-integration-platform" target="_blank" rel="noopener" style="color: var(--teal-700); font-weight: 600;">VA website for innovation diffusion</a>.</p>
+        </div>
+      </div>
+
+      <!-- Why we win -->
+      <div style="padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Competitive Advantage</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">The deeper the integration, the harder we are to displace.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">EHR vendors and IT giants have spent years failing to build this combination. Core Mobile provides modularity, paving an easy path to add-on sales.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 36px;">
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 30px;">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">01 · Proof</div>
+            <div style="width: 32px; height: 3px; background: var(--brand); border-radius: 2px; margin: 14px 0 0 0;"></div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Proven at VA scale</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">National Authority to Operate with HIPAA and FISMA compliance, validated in live VA hospitals. Fewer than a handful of AI platforms have earned this; it’s a 5-year barrier for any competitor trying to enter the federal health market.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 30px;">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">02 · Interoperability</div>
+            <div style="width: 32px; height: 3px; background: var(--brand); border-radius: 2px; margin: 14px 0 0 0;"></div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Native to the systems hospitals already run</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Deep integration with Epic, Oracle/Cerner, VistA/CPRS, Meditech, CPSI, and Allscripts, plus bedside devices via DICOM, FHIR, and HL7. The more integrations, the stickier the platform.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 30px;">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">03 · Speed</div>
+            <div style="width: 32px; height: 3px; background: var(--brand); border-radius: 2px; margin: 14px 0 0 0;"></div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Live in under 30 days, ROI inside of 90 days</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">No rip-and-replace. No multi-year implementation. Core Mobile deploys on top of existing systems and delivers measurable economic return inside a fiscal quarter, eliminating a major purchasing objection.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 30px;">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">04 · End-to-end view</div>
+            <div style="width: 32px; height: 3px; background: var(--brand); border-radius: 2px; margin: 14px 0 0 0;"></div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">One operational picture across the patient journey</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Not a single-department point solution. Core Mobile spans emergency transport through inpatient care, surgery, and discharge, providing the kind of unified visibility that makes switching costs significant.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Platform -->
+      <div style="background: var(--ink-50); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">The Platform</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">An AI-enabled, unified platform.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">PCSIP (the Patient Care Services Integration Platform) sits as an integration, inference, and workflow layer above every system a hospital already runs.</p>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 36px;">
+          <a href="clinical-ai.html" style="display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 26px;" style-hover="box-shadow: var(--shadow-md); border-color: var(--teal-300);">
+            <i class="fa-solid fa-brain" style="color: var(--teal-600); font-size: 17px;"></i>
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 19px; color: var(--fg-1); margin-top: 14px;">Clinical AI &amp; Automation</div>
+            <p style="font-size: 19px; line-height: 1.7; color: #000; margin: 10px 0 0 0;">Ambient AI · PCSIP · Care Quality Reporting · Case Management</p>
+          </a>
+          <a href="coordination-and-flow.html" style="display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 26px;" style-hover="box-shadow: var(--shadow-md); border-color: var(--teal-300);">
+            <i class="fa-solid fa-video" style="color: var(--teal-600); font-size: 17px;"></i>
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 19px; color: var(--fg-1); margin-top: 14px;">Care Coordination &amp; Flow</div>
+            <p style="font-size: 19px; line-height: 1.7; color: #000; margin: 10px 0 0 0;">Clinical Documentation · Scheduling Optimization · Video Management · E-sitters</p>
+          </a>
+          <a href="patient-engagement.html" style="display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 26px;" style-hover="box-shadow: var(--shadow-md); border-color: var(--teal-300);">
+            <i class="fa-solid fa-mobile-screen-button" style="color: var(--teal-600); font-size: 17px;"></i>
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 19px; color: var(--fg-1); margin-top: 14px;">Patient Engagement</div>
+            <p style="font-size: 19px; line-height: 1.7; color: #000; margin: 10px 0 0 0;">Telehealth · Patient Education · CoreyPatient App</p>
+          </a>
+          <a href="iot-and-facility-safety.html" style="display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 26px;" style-hover="box-shadow: var(--shadow-md); border-color: var(--teal-300);">
+            <i class="fa-solid fa-location-dot" style="color: var(--teal-600); font-size: 17px;"></i>
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 19px; color: var(--fg-1); margin-top: 14px;">IoT &amp; Facility Safety</div>
+            <p style="font-size: 19px; line-height: 1.7; color: #000; margin: 10px 0 0 0;">Asset &amp; Staff Mgmt · Hand Hygiene · Patient &amp; Staff Safety</p>
+          </a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; background: var(--teal-50); border: 1px solid var(--teal-200); border-radius: var(--r-lg); padding: 18px 24px; margin-top: 20px;">
+          <span style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-700);">Sits on top of</span>
+          <span style="font-size: 19px; color: #000;">Epic · Oracle/Cerner · VistA/CPRS · Meditech · CPSI · Allscripts · Thrive · DICOM · FHIR · HL7</span>
+        </div>
+      </div>
+
+      <!-- Business model -->
+      <div style="padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Business Model</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">We charge per case, not per seat.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">Revenue scales with patient and case volume, insulated from the seat erosion now hitting traditional per-seat healthcare software.</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 36px; align-items: start;">
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 24px; display: flex; align-items: flex-start; gap: 18px;">
+              <span style="flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%; background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 19px; font-weight: 700;">01</span>
+              <div>
+                <div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Platform fee</div>
+                <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 6px 0 0 0;">A base fee per deployment, across the health system. Covers integration, onboarding, and the core infrastructure layer.</p>
+              </div>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 24px; display: flex; align-items: flex-start; gap: 18px;">
+              <span style="flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%; background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 19px; font-weight: 700;">02</span>
+              <div>
+                <div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Per-case recurring revenue</div>
+                <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 6px 0 0 0;">Ongoing revenue that grows naturally with every case the hospital runs. No renegotiation, no seat count arguments. Volume drives the top line.</p>
+              </div>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 24px; display: flex; align-items: flex-start; gap: 18px;">
+              <span style="flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%; background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 19px; font-weight: 700;">03</span>
+              <div>
+                <div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Add-on modules</div>
+                <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 6px 0 0 0;">Ambient AI, IoT, CARE Act, and quality reporting modules added department by department as each health system expands its footprint.</p>
+              </div>
+            </div>
+          </div>
+          <div style="background: var(--grad-brand); border-radius: var(--r-lg); padding: 34px;">
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 24px; color: #fff;">Why this model compounds</div>
+            <p style="font-size: 19px; line-height: 1.7; color: rgba(255,255,255,0.95); margin: 14px 0 24px 0;">Per-case pricing aligns Core Mobile’s growth with the hospital’s own patient throughput. As hospitals process more cases and expand module usage, revenue grows without headcount-dependent selling.</p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; gap: 12px; align-items: flex-start; font-size: 19px; line-height: 1.6; color: rgba(255,255,255,0.95);"><span style="flex: 0 0 auto; color: rgba(255,255,255,0.7); font-weight: 700;">→</span><span>Revenue tied to clinical activity, not license renewals</span></div>
+              <div style="display: flex; gap: 12px; align-items: flex-start; font-size: 19px; line-height: 1.6; color: rgba(255,255,255,0.95);"><span style="flex: 0 0 auto; color: rgba(255,255,255,0.7); font-weight: 700;">→</span><span>Module expansion grows ACV without a new sales cycle</span></div>
+              <div style="display: flex; gap: 12px; align-items: flex-start; font-size: 19px; line-height: 1.6; color: rgba(255,255,255,0.95);"><span style="flex: 0 0 auto; color: rgba(255,255,255,0.7); font-weight: 700;">→</span><span>Break-even at $2.1M demonstrates unit economics viability</span></div>
+              <div style="display: flex; gap: 12px; align-items: flex-start; font-size: 19px; line-height: 1.6; color: rgba(255,255,255,0.95);"><span style="flex: 0 0 auto; color: rgba(255,255,255,0.7); font-weight: 700;">→</span><span>Clear path to $8–10M in 12–18 months from existing relationships</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Traction -->
+      <div style="background: var(--ink-50); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Traction</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">$2.1M in revenue, break-even, and proven in the field.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">Not pilots waiting for production. Real deployments, third-party-validated outcomes, and a clear line of sight to the next revenue milestone.</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 36px; align-items: start;">
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand); padding: 22px 26px; display: flex; align-items: center; gap: 22px;">
+              <div style="font-family: var(--font-display); font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: var(--teal-700); line-height: 1; flex: 0 0 auto;">$2.1M</div>
+              <div style="font-size: 19px; line-height: 1.4; color: #000;">Revenue, operationally break-even today</div>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand); padding: 22px 26px; display: flex; align-items: center; gap: 22px;">
+              <div style="font-family: var(--font-display); font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: var(--teal-700); line-height: 1; flex: 0 0 auto;">20%+</div>
+              <div style="font-size: 19px; line-height: 1.4; color: #000;">Efficiency gains demonstrated at UCLA and Albany VA</div>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand); padding: 22px 26px; display: flex; align-items: center; gap: 22px;">
+              <div style="font-family: var(--font-display); font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: var(--teal-700); line-height: 1; flex: 0 0 auto;">$8–10M</div>
+              <div style="font-size: 19px; line-height: 1.4; color: #000;">Revenue target within 12–18 months</div>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand); padding: 22px 26px; display: flex; align-items: center; gap: 22px;">
+              <div style="font-family: var(--font-display); font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: var(--teal-700); line-height: 1; flex: 0 0 auto;">&lt;90 days</div>
+              <div style="font-size: 19px; line-height: 1.4; color: #000;">Contract to live implementation</div>
+            </div>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-700); padding-bottom: 14px; border-bottom: 1px solid var(--border);">Active deployments &amp; pilots</div>
+              <div style="display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border);">
+                <span style="flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%; background: var(--teal-500);"></span>
+                <div>
+                  <div style="font-size: 19px; font-weight: 500; color: #000;">Albany VA Medical Center</div>
+                  <div style="font-size: 19px; color: var(--ink-500);">Live · Third-party validated pilot</div>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border);">
+                <span style="flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%; background: var(--teal-500);"></span>
+                <div>
+                  <div style="font-size: 19px; font-weight: 500; color: #000;">VISN 19: Utah &amp; Wyoming VA</div>
+                  <div style="font-size: 19px; color: var(--ink-500);">Live deployment underway</div>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border);">
+                <span style="flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%; background: var(--teal-500);"></span>
+                <div>
+                  <div style="font-size: 19px; font-weight: 500; color: #000;">VA Radiation Oncology</div>
+                  <div style="font-size: 19px; color: var(--ink-500);">Live deployment</div>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border);">
+                <span style="flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%; background: var(--teal-500);"></span>
+                <div>
+                  <div style="font-size: 19px; font-weight: 500; color: #000;">UCLA Health</div>
+                  <div style="font-size: 19px; color: var(--ink-500);">Outcomes published</div>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; padding: 14px 0; ">
+                <span style="flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%; background: var(--teal-500);"></span>
+                <div>
+                  <div style="font-size: 19px; font-weight: 500; color: #000;">Contra Costa Health</div>
+                  <div style="font-size: 19px; color: var(--ink-500);">County health system · Awarded</div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div style="padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Security &amp; Compliance</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">HIPAA &amp; FISMA compliant. Federal ATO, built in.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">The compliance stack isn’t a feature checkbox; it’s a genuine competitive moat. Most AI companies selling into healthcare are still working toward these certifications.</p>
+        <div style="background: var(--grad-brand); border-radius: var(--r-lg); padding: 32px; margin-top: 36px; display: flex; gap: 26px; align-items: flex-start;">
+          <span style="flex: 0 0 auto; background: #fff; color: var(--teal-700); font-weight: 800; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 14px; border-radius: var(--r-md); margin-top: 3px;">National ATO</span>
+          <div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: #fff;">Authority to Operate across VA health systems</div>
+            <p style="font-size: 19px; line-height: 1.65; color: rgba(255,255,255,0.95); margin: 10px 0 0 0;">Fewer than a handful of AI platforms have earned a National ATO. This clears Core Mobile to operate inside federal health systems without a lengthy per-facility review, a procurement accelerator worth 12–18 months of competitive advantage per new federal customer.</p>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 18px;">
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1);">HIPAA &amp; FISMA Compliant</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Compliant by design for both clinical and federal data standards. Covers all data in motion and at rest across every deployment environment.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1);">Data Sovereignty</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Customer-controlled architecture. Each hospital owns and governs its own data with no cross-customer sharing and no vendor lock-in on data portability.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1);">Human-in-the-Loop AI</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Every AI decision carries a full audit trail. Clinical teams remain in the loop on any action the system surfaces, meeting the regulatory and liability standards hospitals require for AI adoption.</p>
+          </div>
+        </div>
+        <a href="security-and-compliance.html" style="display: inline-flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 26px;">See Security &amp; Compliance <i class="fa-solid fa-arrow-right" style="font-size: 12px;"></i></a>
+      </div>
+
+      <!-- Partners -->
+      <div style="background: var(--ink-50); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Partnerships</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">Go-to-market backed by established channels.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">Active partnerships for distribution, device integration, and advisory support. Core Mobile scales through partners, not just direct sales.</p>
+          <div style="margin-top: 30px;">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-500);">Co-sell / Distribution</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px;">
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">Siemens Healthineers</span>
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">World Wide Technology (WWT)</span>
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">IBM</span>
+            </div>
+          </div>
+          <div style="margin-top: 30px;">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-500);">Device Integration</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px;">
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">Siemens Healthineers</span>
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">Varian</span>
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">Philips</span>
+            </div>
+          </div>
+          <div style="margin-top: 30px;">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-500);">Technology &amp; Advisory</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px;">
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">Dell Technologies</span>
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">InfoVision</span>
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">EY</span>
+              <span style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 10px 20px; font-size: 19px; font-weight: 500; color: #000;">MCG (IDIQ Teaming)</span>
+            </div>
+          </div>
+        <a href="partners.html" style="display: inline-flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 30px;">View all partnerships <i class="fa-solid fa-arrow-right" style="font-size: 12px;"></i></a>
+      </div>
+
+      <!-- Team -->
+      <div style="padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Leadership</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">Founder-led, with a clinical bench.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">Deep enterprise infrastructure experience at the top, paired with career clinicians who’ve operated at VA scale, and 40+ engineers behind the platform.</p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px;">
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="width: 46px; height: 46px; border-radius: var(--r-md); background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 19px; font-weight: 700;">CT</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Chandra Tekwani</div>
+            <div style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 4px;">Founder &amp; CEO</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">30+ years in enterprise infrastructure. Former exec at Juniper Networks and NetScreen. Navigated federal procurement, clinical operations, and enterprise sales cycles firsthand.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="width: 46px; height: 46px; border-radius: var(--r-md); background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 19px; font-weight: 700;">VC</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Vinay Chhatre</div>
+            <div style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 4px;">COO · PharmD</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">35+ years in healthcare operations. Former Amersham. Brings clinical credibility and operational discipline to scaling deployments across complex health systems.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="width: 46px; height: 46px; border-radius: var(--r-md); background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 19px; font-weight: 700;">NK</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Neal Kaushal</div>
+            <div style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 4px;">CMO · MD/MBA</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Former UCLA. Provides clinical leadership and physician-level credibility in customer conversations and product direction.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="width: 46px; height: 46px; border-radius: var(--r-md); background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 19px; font-weight: 700;">DB</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Deyne Bentt</div>
+            <div style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 4px;">Health Informatics</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Former Chief Health Informatics Officer at the VA. Brings direct knowledge of VA systems architecture and federal health IT procurement.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="width: 46px; height: 46px; border-radius: var(--r-md); background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 19px; font-weight: 700;">AC</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Angelique Crooke</div>
+            <div style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 4px;">Head of Clinical Ops · RN</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">30+ years in clinical operations. Ensures every deployment maps to real workflows and that care teams actually adopt what’s built.</p>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px;">
+            <div style="width: 46px; height: 46px; border-radius: var(--r-md); background: var(--teal-50); color: var(--teal-700); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 19px; font-weight: 700;">PC</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 16px;">Pramod Chivate</div>
+            <div style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 4px;">Product &amp; Program</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Former Accenture. Drives product strategy and delivery across a 40+ engineer team building the PCSIP platform.</p>
+          </div>
+        </div>
+        <a href="our-story.html" style="display: inline-flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: 26px;">Our story <i class="fa-solid fa-arrow-right" style="font-size: 12px;"></i></a>
+      </div>
+
+      <!-- Markets -->
+      <div style="background: var(--ink-50); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Markets</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">Three distinct channels into hospital systems.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">Federal ATO unlocks government hospitals immediately. County and health system channels expand the addressable market significantly.</p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; align-items: stretch;">
+          <a href="federal-and-government-hospitals.html" style="display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 28px;" style-hover="box-shadow: var(--shadow-md); border-color: var(--teal-300);">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Federal</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 12px;">Government Hospitals</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">National ATO bypasses the lengthy federal procurement cycle. Core Mobile is already in the VA system and has a contracting path through the $700B IDIQ vehicle.</p>
+            <span style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: auto; padding-top: 20px;">Learn more <i class="fa-solid fa-arrow-right" style="font-size: 12px;"></i></span>
+          </a>
+          <a href="health-systems-and-educational-networks.html" style="display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 28px;" style-hover="box-shadow: var(--shadow-md); border-color: var(--teal-300);">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">Health Systems</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 12px;">Educational &amp; Health Networks</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Multi-facility deployments with training integrations. UCLA is a live example. These relationships expand module by module across campuses.</p>
+            <span style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: auto; padding-top: 20px;">Learn more <i class="fa-solid fa-arrow-right" style="font-size: 12px;"></i></span>
+          </a>
+          <a href="county-and-rural-hospitals.html" style="display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 3px solid var(--brand); padding: 28px;" style-hover="box-shadow: var(--shadow-md); border-color: var(--teal-300);">
+            <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">County &amp; Rural</div>
+            <div style="font-family: var(--font-display); font-weight: 600; font-size: 21px; color: var(--fg-1); margin-top: 12px;">County &amp; Rural Hospitals</div>
+            <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 10px 0 0 0;">Capacity-constrained facilities where efficiency gains have the highest proportional impact. California’s 58 counties represent a direct channel with existing relationships.</p>
+            <span style="font-size: 19px; font-weight: 600; color: var(--teal-700); margin-top: auto; padding-top: 20px;">Learn more <i class="fa-solid fa-arrow-right" style="font-size: 12px;"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- The ask -->
+      <div style="padding: 80px 64px;">
+          <div style="font-weight: 700; font-size: 19px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand);">The Raise</div>
+          <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.15; letter-spacing: -0.015em; color: var(--fg-1); margin: 0;">Raising $5M to scale a proven platform.</h2>
+          <p style="font-size: 21px; line-height: 1.6; color: #000; margin: 18px 0 0 0;text-wrap: pretty;">$2.1M is already committed. The remaining $2.9M funds three specific near-term initiatives tied directly to the $8–10M revenue target.</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 36px; align-items: start;">
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); overflow: hidden;">
+            <div style="background: var(--brand); padding: 26px 28px;">
+              <div style="font-family: var(--font-display); font-weight: 800; font-size: 24px; color: #fff;">Series A Terms</div>
+              <div style="font-size: 19px; color: rgba(255,255,255,0.9); margin-top: 4px;">Confidential · For qualified investors</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 28px; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 19px; color: #000;">Round size</span>
+              <span style="font-size: 19px; font-weight: 600; color: var(--fg-1);">$5M</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 28px; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 19px; color: #000;">Pre-money valuation</span>
+              <span style="font-size: 19px; font-weight: 600; color: var(--fg-1);">$20M</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 28px; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 19px; color: #000;">Post-money valuation</span>
+              <span style="font-size: 19px; font-weight: 600; color: var(--fg-1);">$25M</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 28px; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 19px; color: #000;">Already committed</span>
+              <span style="font-size: 19px; font-weight: 600; color: var(--teal-700);">$2.1M in</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 28px; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 19px; color: #000;">Remaining</span>
+              <span style="font-size: 19px; font-weight: 600; color: var(--fg-1);">$2.9M</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 28px; border-bottom: 1px solid var(--border);">
+              <span style="font-size: 19px; color: #000;">Revenue today</span>
+              <span style="font-size: 19px; font-weight: 600; color: var(--fg-1);">$2.1M, break-even</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 28px; ">
+              <span style="font-size: 19px; color: #000;">Revenue target</span>
+              <span style="font-size: 19px; font-weight: 600; color: var(--fg-1);">$8–10M in 12–18 mo</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 24px; display: flex; align-items: flex-start; gap: 16px;">
+              <span style="flex: 0 0 auto; font-family: var(--font-mono); font-size: 19px; font-weight: 700; color: var(--teal-700);">01</span>
+              <div>
+                <div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Scale go-to-market</div>
+                <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 6px 0 0 0;">Build a dedicated health-system sales motion. The product is proven; the bottleneck is systematic outbound and enterprise selling capability.</p>
+              </div>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 24px; display: flex; align-items: flex-start; gap: 16px;">
+              <span style="flex: 0 0 auto; font-family: var(--font-mono); font-size: 19px; font-weight: 700; color: var(--teal-700);">02</span>
+              <div>
+                <div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Channel &amp; partner management</div>
+                <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 6px 0 0 0;">Activate the Siemens, WWT, and IBM co-selling relationships. These partnerships exist; the investment builds the team to manage and grow them.</p>
+              </div>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 24px; display: flex; align-items: flex-start; gap: 16px;">
+              <span style="flex: 0 0 auto; font-family: var(--font-mono); font-size: 19px; font-weight: 700; color: var(--teal-700);">03</span>
+              <div>
+                <div style="font-family: var(--font-display); font-weight: 600; font-size: 19px; color: var(--fg-1);">Expand existing deployments</div>
+                <p style="font-size: 19px; line-height: 1.6; color: #000; margin: 6px 0 0 0;">Deepen existing VA and health system relationships by adding modules, expanding to adjacent facilities, and converting pilots into multi-year commitments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Closing CTA -->
+      <div style="background: var(--grad-brand); padding: 80px 64px; text-align: center;">
+        <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 38px; line-height: 1.12; letter-spacing: -0.015em; color: #fff; margin: 0 auto; max-width: 760px; text-wrap: pretty;">Ready to go deeper?</h2>
+        <p style="font-size: 19px; line-height: 1.6; color: rgba(255,255,255,0.95); margin: 20px auto 0 auto; max-width: 620px; text-wrap: pretty;">We’re happy to share the full deck, third-party pilot report, and a product walkthrough with qualified investors.</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px; margin-top: 32px;">
+          <a href="mailto:chandra@coremobileinc.com" style="display: inline-flex; align-items: center; background: #fff; color: var(--teal-700); font-size: 19px; font-weight: 700; padding: 15px 30px; border-radius: var(--r-md); box-shadow: var(--shadow-md);" style-hover="background: var(--teal-50); color: var(--teal-800);">Request a meeting</a>
+          <a href="support.html" style="display: inline-flex; align-items: center; gap: 10px; border: 1.5px solid rgba(255,255,255,0.7); color: #fff; font-size: 19px; font-weight: 600; padding: 14px 28px; border-radius: var(--r-md);" style-hover="background: rgba(255,255,255,0.12); color: #fff;">Contact form</a>
+        </div>
+        <div style="font-size: 19px; color: rgba(255,255,255,0.95); margin-top: 26px;"><strong>Chandra Tekwani</strong> · Founder &amp; CEO · <a href="mailto:chandra@coremobileinc.com" style="color: #fff; font-weight: 600;">chandra@coremobileinc.com</a> · <a href="tel:+14084760770" style="color: #fff; font-weight: 600;">(408) 476-0770</a></div>
+        <p style="font-size: 19px; line-height: 1.7; color: rgba(255,255,255,0.85); margin: 30px auto 0 auto;padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.25); text-wrap: pretty;">This page is intended for qualified investors and contains forward-looking statements. All outcome metrics are sourced from third-party validated pilots. Contact Core Mobile for the full investor package.</p>
+      </div>
+
+      <!-- Footer -->
+      <div style="background: var(--big-stone); padding: 48px 64px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px;">
+          <a href="index.html"><img src="assets/logo-long-white.png" alt="Core Mobile AI" style="height: 26px; display: block;"></a>
+          <div style="display: flex; align-items: center; gap: 30px;">
+            <a href="platform.html" style="font-size: 19px; font-weight: 600; color: rgba(255,255,255,0.95);" style-hover="color: #fff;">Platform</a>
+            <a href="#1a" style="font-size: 19px; font-weight: 600; color: rgba(255,255,255,0.95);" style-hover="color: #fff;">Use Cases</a>
+            <a href="#1a" style="font-size: 19px; font-weight: 600; color: rgba(255,255,255,0.95);" style-hover="color: #fff;">Markets</a>
+            <a href="security-and-compliance.html" style="font-size: 19px; font-weight: 600; color: rgba(255,255,255,0.95);" style-hover="color: #fff;">Trust</a>
+            <a href="#1a" style="font-size: 19px; font-weight: 600; color: rgba(255,255,255,0.95);" style-hover="color: #fff;">About</a>
+            <a href="investors.html" style="font-size: 19px; font-weight: 600; color: rgba(255,255,255,0.95);" style-hover="color: #fff;">Investors</a>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; border-top: 1px solid rgba(255,255,255,0.12); margin-top: 28px; padding-top: 24px;">
+          <a href="mailto:info@coremobile.ai" style="display: inline-flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 600; color: #fff;" style-hover="color: var(--teal-300);"><i class="fa-solid fa-envelope" style="font-size: 14px; color: var(--teal-300);"></i> info@coremobile.ai</a>
+          <a href="tel:+14088797206" style="display: inline-flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 600; color: #fff;" style-hover="color: var(--teal-300);"><i class="fa-solid fa-phone" style="font-size: 14px; color: var(--teal-300);"></i> +1 408 879 7206</a>
+          <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 19px; color: rgba(255,255,255,0.95);"><i class="fa-solid fa-location-dot" style="font-size: 14px; color: var(--teal-300);"></i> Campbell, California</span>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; border-top: 1px solid rgba(255,255,255,0.12); margin-top: 32px; padding-top: 22px;">
+          <div style="font-size: 19px; color: rgba(255,255,255,0.95);">© 2026 Core Mobile, Inc. · Campbell, CA</div>
+          <div style="font-size: 19px; color: rgba(255,255,255,0.95);">HIPAA &amp; FISMA compliant · Federal Authority to Operate (ATO)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script src="responsive.js"></script>
+</body>
+</html>
