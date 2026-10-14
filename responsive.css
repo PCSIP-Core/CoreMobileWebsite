@@ -209,4 +209,12 @@
   }
   /* button rows stack */
   [style*="display: flex"][style*="gap: 16px"] { flex-wrap: wrap !important; }
+
+  /* comparison table: drop the header row, label each cell */
+  [data-cmp-head] { display: none !important; }
+  [data-cmp-label] { flex-direction: column !important; gap: 8px !important; border-left: 0 !important; border-right: 0 !important; }
+  [data-cmp-label] > i { display: none !important; }
+  [data-cmp-label]::before { content: attr(data-cmp-label); font-family: var(--font-display); font-weight: 700; font-size: 19px; color: var(--teal-700); }
+  [data-cmp-label="Mirth Connect"]::before { color: var(--ink-500); }
+  [data-mobile-hide] { display: none !important; }
 }
